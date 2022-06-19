@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire</title>
+</head>
+
+
+<body>
+
+    <div class="m-title">
+        <h1 class"m-title">Authentification</h1>
+
+    </div>
+
+    <div class="result">
+        <p></p>
+    </div>
+
+
+    <div class="contGlobale">
+
+        <div class="login">
+
+
+                <form action="https://www.ericfreelance.fr/api/check_user.php" method="post">
+
+                    <label for="monInputEmail">Identifiant</label>
+                    <br>
+                    <input id="monInputEmail" type="email" placeholder="Saisissez votre identifiant" required maxlength="50">
+
+                    <br><br>
+                    <label for="monMp">Mot de passe</label>
+                    <br>
+                    <input id="monMp" type="password" placeholder="Composer votre mot de passe" required >
+                    <br><br>
+
+                    <div class="clavierVertuel">
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                        <div class="cel"><div calss="click"></div></div>
+                    </div>
+
+                    <br>
+
+                    <div class="bloc-btn">
+                        <input type="button" id="btn" value="Valider">
+                        <input type="reset" id ="raz" value="Effacer" onclick="history.go(0)">
+                    </div>
+
+                </form>
+
+        </div>
+
+        <div class="panneauDroit">
+            <div class="liens">
+                <div class="aide">
+                    <img src="aide.JPG" style="width: 17px;" alt="">
+                    <a href="#">Aide à la connexion</a>
+                </div>
+
+                <div class="mdpPerdu">
+                    <img src="mdpperdu.JPG" style="width: 17px;" alt="">
+                    <a href="#">Identifiant / Mot de passe perdu</a>
+                </div>
+
+                <div class="securite">
+                    <img src="sécurité.JPG" style="width: 17px;" alt="">
+                    <a href="#">Sécurité Identifiant / Mot de passe</a>
+                </div>
+            </div>
+            <br>
+            <div class="msgImportant">
+                <p><strong>Important :</strong> votre vigilance est primordiale pour assurer la Sécurité de votre
+                    compte.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

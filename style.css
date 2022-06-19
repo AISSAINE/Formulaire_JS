@@ -1,0 +1,149 @@
+*,
+::before,
+::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: montserrat, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
+}
+
+.m-title {
+    text-align: center;
+}
+
+.result {
+    color: rgb(150, 99, 6);
+    width: 650px;
+    margin: 0 auto 10px auto;
+    padding: 20px;
+}
+
+.contGlobale {
+    width: 650px;
+    height: 450px;
+
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.login {
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input#monInputEmail,#monMp {
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid gainsboro;
+
+}
+
+input:invalid {
+    border: 1px solid red;
+}
+
+input :valid {
+    border: 1px solid green;
+}
+
+input {
+    outline: none;
+}
+
+.clavierVertuel {
+    padding-left: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 45px);
+    grid-template-rows: repeat(4, 45px);
+    gap: 6px;
+
+    justify-content: stretch;
+    align-content: stretch;
+
+    justify-items: stretch;
+    align-items: stretch;
+}
+
+.clavierVertuel div {
+    background: gainsboro;
+    text-align: center;
+    padding-top: 33%;
+}
+
+.clavierVertuel div:hover {
+    background-color: rgb(43, 146, 243);
+    cursor: pointer;
+}
+
+.bloc-btn #btn,#raz {
+    background: rgb(43, 146, 243);
+    color: #fff;
+    padding: 15px 20px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+
+/*panneau de doit */
+.panneauDroit {
+    align-self: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(43, 146, 243);
+}
+
+.msgImportant {
+    background-color: gainsboro;
+    width: 250px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 650px) {
+
+    .result {
+        text-align: center;
+        width: 370px;
+    }
+
+    .contGlobale {
+        width: auto;
+        height: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        padding: 20px;
+    }
+
+    .login {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    input#monInputEmail,
+    #monMp {
+        text-align: center;
+    }
+
+    .bloc-btn {
+        text-align: center;
+    }
+
+}
